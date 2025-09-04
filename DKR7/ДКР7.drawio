@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.8">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="664" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WROmNl2XqaWcxP4cynx6-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-0" target="WROmNl2XqaWcxP4cynx6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-0" value="Начало" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-1" target="WROmNl2XqaWcxP4cynx6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-1" value="&lt;div&gt;Ввод&lt;/div&gt;&lt;div&gt;Depth: Integer&lt;/div&gt;&lt;div&gt;&amp;nbsp; Points: array of TPoint&lt;/div&gt;&lt;div&gt;&amp;nbsp; Scale: Double&lt;/div&gt;&lt;div&gt;&amp;nbsp; OffsetX, OffsetY: Integer&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-3" target="WROmNl2XqaWcxP4cynx6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-3" value="&lt;div&gt;Depth := 3&lt;/div&gt;&lt;div&gt;&amp;nbsp; Scale := 1.0&lt;/div&gt;&lt;div&gt;&amp;nbsp; OffsetX := 100&lt;/div&gt;&lt;div&gt;&amp;nbsp; OffsetY := 100&lt;/div&gt;&lt;div&gt;&amp;nbsp; SetLength(Points, 1 shl (2 * Depth))&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="280" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-4" target="WROmNl2XqaWcxP4cynx6-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-4" value="DrawHilbertCurve(Depth, Points)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="400" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-7" target="WROmNl2XqaWcxP4cynx6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-7" value="&lt;div&gt;Window.Title := &#39;Кривая Гильберта&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; Window.SetSize(800, 800)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="520" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-9" target="WROmNl2XqaWcxP4cynx6-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-9" value="DrawCurve" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="640" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-11" target="WROmNl2XqaWcxP4cynx6-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-11" value="OnKeyDown := HandleKeyDown" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="760" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-13" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="364" y="760" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WROmNl2XqaWcxP4cynx6-11" target="WROmNl2XqaWcxP4cynx6-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="690" as="sourcePoint" />
+            <mxPoint x="370" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-15" value="обработчик событий" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="785" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WROmNl2XqaWcxP4cynx6-16" value="Конец" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="880" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
